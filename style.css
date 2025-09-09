@@ -1,0 +1,189 @@
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #f0f0f0;
+    color: #444;
+    margin: 0;
+    padding: 2rem;
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0.5rem;
+}
+
+p {
+    line-height: 1.6;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.resume-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #fff;
+    display: flex;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+.sidebar {
+    background-color: #2c3e50; /* Dark blue-gray */
+    color: #ecf0f1;
+    padding: 2rem;
+    width: 35%;
+}
+
+.sidebar h2 {
+    color: #fff;
+    border-bottom: 1px solid #7f8c8d;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 2rem;
+    border: 5px solid #34495e;
+}
+
+.about-me p {
+    font-size: 0.9rem;
+    color: #bdc3c7;
+}
+
+.skills ul li {
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.skill-level {
+    margin-top: 0.3rem;
+}
+
+.dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: #7f8c8d; 
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.dot.filled {
+    background-color: #ecf0f1; /
+}
+
+
+.main-content {
+    padding: 2.5rem;
+    width: 65%;
+}
+
+.main-header {
+    text-align: center;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.main-header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #2c3e50;
+}
+
+.main-header .job-title {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #34495e;
+    margin-top: 0.5rem;
+}
+
+.contact-info {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem 2rem; 
+    font-size: 0.9rem;
+}
+
+.contact-info li i {
+    color: #34495e;
+    margin-right: 0.5rem;
+}
+
+.Projects, .education {
+    margin-bottom: 2rem;
+}
+
+.job, .school {
+    margin-bottom: 1.5rem;
+}
+
+.dates {
+    font-weight: bold;
+    color: #7f8c8d;
+    float: right;
+    font-size: 0.9rem;
+}
+
+.job h3, .school h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #34495e;
+    margin-bottom: 0.2rem;
+}
+
+.job h4, .school h4 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #7f8c8d;
+    margin-bottom: 0.5rem;
+}
+
+.job p, .school p {
+    font-size: 0.95rem;
+}
+@media (max-width: 768px) {
+    body {
+        padding: 0;
+    }
+
+    .resume-container {
+        flex-direction: column;
+    }
+
+    .sidebar, .main-content {
+        width: 100%;
+        box-sizing: border-box; 
+    }
+
+    .dates {
+        float: none;
+        margin-bottom: 0.5rem;
+        display: block;
+    }
+    
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+}
